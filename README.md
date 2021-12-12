@@ -2,6 +2,18 @@
 
 J'ai trouvé le bon algorithme pour créer une calculatrice qui répond à tous les critères, toutefois, trop de règles auraient été trépassées. Voici, 3 calculatrices qui répondent aux critères globaux sans trop trépasser les règles.
 
+### Compilation
+`javac *.java`
+
+### Run
+
+Input :
+`java Calcul.java`
+
+Binaire :
+
+`java CalculTest.java`
+
 ## Mini rapport (click & zoom)
 
 
