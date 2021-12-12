@@ -11,7 +11,7 @@ Input :
 `java Calcul.java`
 
 Binaire :
-s`java CalculTest.java`
+`java CalculTest.java`
 
 ## Mini rapport (click & zoom)
 
