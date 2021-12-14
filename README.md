@@ -11,12 +11,12 @@ javac *.java
 
 Input :
 ```
-java Calcul.java
+java Calcul
 ```
 
 Binaire :
 ```
-java CalculTest.java
+java CalculTest
 ```
 
 ## Mini rapport (click & zoom)
