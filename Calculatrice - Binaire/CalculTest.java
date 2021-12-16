@@ -19,6 +19,8 @@ public class CalculTest {
         System.out.println("\n\nResultat de l'expression : " +
                 calcul.evalueArbre());
 
+        System.out.println("Comment remedier a la faille des arbres binaires?");
+
         // Suppression de l'arbre pour libérer la mémoire
         calcul.clear();
 
