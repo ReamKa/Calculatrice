@@ -1,8 +1,10 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Calcul {
     public static void main(String[] args) {
         // Variables locales
+        String input = Arrays.toString(args);
         double premierChiffre, deuxiemeChiffre;
         double resultat = 0.0;
         String stop = "";
@@ -11,8 +13,12 @@ public class Calcul {
         Scanner scan = new Scanner(System.in);
 
         while (!stop.equals("n")) {
+
             System.out.println("Entrez votre premier chiffre:");
             premierChiffre = scan.nextDouble();
+
+            // do while
+
             System.out.println("Entrez votre deuxieme chiffre:");
             deuxiemeChiffre = scan.nextDouble();
             System.out.println("Entrez +,-,* ou / pour la partie de votre expression");
@@ -20,7 +26,7 @@ public class Calcul {
 
             switch (reponse) {
                 case "-":
-                    resultat += (premierChiffre - deuxiemeChiffre);
+                    resultat += (premierChiffre);
                     break;
                 case "+":
                     resultat += (premierChiffre + deuxiemeChiffre);
@@ -31,9 +37,11 @@ public class Calcul {
                         break;
                     } else {
                         resultat += (premierChiffre / deuxiemeChiffre);
+                        break;
                     }
                 case "*":
                     resultat += (premierChiffre * deuxiemeChiffre);
+                    break;
                 default:
                     System.out.println("Ce n'est pas un operateur!");
                     return;

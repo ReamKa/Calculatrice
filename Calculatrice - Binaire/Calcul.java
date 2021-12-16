@@ -1,3 +1,4 @@
+
 public class Calcul {
 
     // Variables locales
@@ -40,7 +41,7 @@ public class Calcul {
         return racine.noeud;
     }
 
-    // Insertions des opérateurs sans utilisation des exceptions ?
+    // Insertions des opérateurs sans utilisation des exceptions
     private void insertionOperateur(char valeur) {
         try {
             // On ajoute le chiffre directement à la feuille
@@ -54,7 +55,7 @@ public class Calcul {
                 push(nptr);
             }
         } catch (Exception e) {
-            System.out.println("Non, c'est une mauvaise expression");
+            System.out.println("Un arbre binaire contient x opérateurs et x+1 chiffres. Veuillez revoir votre calcul.");
         }
     }
 
@@ -117,17 +118,23 @@ public class Calcul {
         }
     }
 
-    public void infixe() {
-        inOrder(recuperationRacine());
-    }
+    // public void prefix()
+    // {
+    // preOrder(recuperationRacine));
+    // }
 
-    // Dnas l'ordre traversale, du coup de la gauche puis la racine
-    // et ensuite la droite.
-    private void inOrder(Noeud ptr) {
-        if (ptr != null) {
-            inOrder(ptr.gauche);
-            System.out.print(ptr.donnee);
-            inOrder(ptr.droite);
-        }
-    }
+    // /** pre order traversal */
+    // private void preOrder(TreeNode ptr)
+    // {
+    // if (ptr != null)
+    // {
+    // System.out.print(ptr.data);
+    // preOrder(ptr.left);
+    // preOrder(ptr.right);
+    // }
+    // }
+    // Function to check if
+    // given character is
+    // an operator or not.
+
 }

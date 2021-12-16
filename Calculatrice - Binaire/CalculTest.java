@@ -1,27 +1,28 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class CalculTest {
     public static void main(String[] args) {
 
-        // Conversion d'une array à un string
-        String arbre = Arrays.toString(args);
+        // Conversion de l'ecriture infixe à prefixe
+        System.out.println("Entrez votre calcul INFIXE hihi");
+        Scanner scan = new Scanner(System.in);
+        String expInfixe = scan.next();
+        String expPrefixe = InfixAPrefix.infixAPrefix(expInfixe);
 
-        // Création d'un nouveau objet
+        // // Création d'un nouveau objet
         Calcul calcul = new Calcul();
 
-        // Creation de l'arbre POSTIXE
-        calcul.creerArbre(arbre);
+        // // Creation de l'arbre POSTIXE
+        calcul.creerArbre(expPrefixe);
 
-        // Checkez avec l'utilisateur si c'est bien l'expression qu'il cherchait au
-        // début
-        System.out.print("Votre resultat sous forme infixe est-il le bon ? : ");
-        calcul.infixe();
-
-        // Resultat du calcul
-        System.out.println("\n\nResultat de l'expression postfixe : " + calcul.evalueArbre());
+        // // Resultat du calcul
+        System.out.println("\n\nResultat de l'expression : " +
+                calcul.evalueArbre());
 
         // Suppression de l'arbre pour libérer la mémoire
         calcul.clear();
 
+        // Fermeture du scan
+        scan.close();
     }
 }
