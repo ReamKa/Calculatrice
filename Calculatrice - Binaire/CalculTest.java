@@ -26,5 +26,9 @@ public class CalculTest {
 
         // Fermeture du scan
         scan.close();
+
+        // div par 0
+        // nombre =/= chiffre
+        // Cas non gérés
     }
 }
